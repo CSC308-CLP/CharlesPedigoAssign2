@@ -1,24 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CharlesPedigoAssign2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone_background" translatesAutoresizingMaskIntoConstraints="NO" id="zyw-PI-ae4">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oc1-cz-zv9">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="y3p-hE-ZuN">
+                                <rect key="frame" x="0.0" y="124" width="402" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                    <color key="textColor" systemColor="systemOrangeColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Wellness Coach" id="n0H-qa-eND"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r2c-Lg-Ldm">
+                                <rect key="frame" x="29.333333333333343" y="195" width="343.66666666666663" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Today          " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCZ-lN-rP3">
+                                        <rect key="frame" x="0.0" y="0.0" width="343.66666666666669" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: 1800 kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DX4-Ps-3Hg">
+                                        <rect key="frame" x="0.0" y="58" width="343.66666666666669" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </stackView>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bMd-pV-hBA">
+                                <rect key="frame" x="29.666666666666657" y="347" width="343" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps Today               " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fws-KA-Keg">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: 5000 steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-d0-72t">
+                                        <rect key="frame" x="0.0" y="58" width="343" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoa-a3-bMA">
+                                <rect key="frame" x="29" y="509" width="344" height="62"/>
+                                <color key="backgroundColor" red="0.24737143915447263" green="0.96391752577319589" blue="0.42650796080915343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Meal Planner">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="40"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Oc1-cz-zv9" secondAttribute="bottom" id="1DX-9l-zzO"/>
+                            <constraint firstItem="zyw-PI-ae4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4Rh-i7-UC3"/>
+                            <constraint firstItem="r2c-Lg-Ldm" firstAttribute="top" secondItem="y3p-hE-ZuN" secondAttribute="bottom" constant="27" id="Ad7-br-eXm"/>
+                            <constraint firstItem="Oc1-cz-zv9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H2e-H5-b5X"/>
+                            <constraint firstItem="qoa-a3-bMA" firstAttribute="top" secondItem="bMd-pV-hBA" secondAttribute="bottom" constant="56" id="MmM-2B-kiT"/>
+                            <constraint firstItem="zyw-PI-ae4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ONb-eQ-MJZ"/>
+                            <constraint firstItem="r2c-Lg-Ldm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YRd-aA-k3P"/>
+                            <constraint firstItem="Oc1-cz-zv9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZcN-Vx-mWL"/>
+                            <constraint firstAttribute="bottom" secondItem="zyw-PI-ae4" secondAttribute="bottom" id="czt-fV-rVI"/>
+                            <constraint firstItem="y3p-hE-ZuN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fH9-bh-1bX"/>
+                            <constraint firstItem="zyw-PI-ae4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hGE-g7-w9k"/>
+                            <constraint firstItem="y3p-hE-ZuN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o3V-et-MgG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qoa-a3-bMA" secondAttribute="trailing" constant="29" id="pNK-t6-XEF"/>
+                            <constraint firstItem="bMd-pV-hBA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tbc-Zj-z2d"/>
+                            <constraint firstItem="y3p-hE-ZuN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tnz-eA-2w5"/>
+                            <constraint firstItem="qoa-a3-bMA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="uKe-ru-29s"/>
+                            <constraint firstItem="bMd-pV-hBA" firstAttribute="top" secondItem="r2c-Lg-Ldm" secondAttribute="bottom" constant="46" id="w5y-UF-dlw"/>
+                            <constraint firstItem="Oc1-cz-zv9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x9Q-Ys-dhw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="caloriesStackView" destination="r2c-Lg-Ldm" id="maW-3Y-Yvm"/>
+                        <outlet property="mealPlannerButton" destination="qoa-a3-bMA" id="muF-zB-Idu"/>
+                        <outlet property="stepsStackView" destination="bMd-pV-hBA" id="S6X-ma-Tu1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="23.880597014925371" y="-34.324942791762012"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="phone_background" width="2242" height="3992"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

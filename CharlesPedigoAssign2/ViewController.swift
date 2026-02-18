@@ -9,9 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var caloriesStackView: UIStackView!
+    @IBOutlet weak var stepsStackView: UIStackView!
+    @IBOutlet weak var mealPlannerButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Round out main menu edges
+        caloriesStackView.layer.cornerRadius = 12 //Round out edges
+        stepsStackView.layer.cornerRadius = 12 //Round out edges
+        mealPlannerButton.layer.cornerRadius = 12
+        
+        
+        
+        
     }
 
 
