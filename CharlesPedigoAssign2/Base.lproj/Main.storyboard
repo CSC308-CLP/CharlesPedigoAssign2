@@ -110,7 +110,7 @@
         <!--Meal Planner-->
         <scene sceneID="rQ9-B8-Xxr">
             <objects>
-                <viewController title="Meal Planner" id="hka-wn-RvX" sceneMemberID="viewController">
+                <viewController title="Meal Planner" id="hka-wn-RvX" customClass="MealPlanner" customModule="CharlesPedigoAssign2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eV3-vI-hor">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,6 +232,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="40"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="simulateDay:" destination="hka-wn-RvX" eventType="touchUpInside" id="vcf-qs-5fY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Z3-PL-763"/>
@@ -291,6 +294,16 @@
                     <navigationItem key="navigationItem" title="Meal Planner" id="6AP-S9-V6B">
                         <barButtonItem key="backBarButtonItem" title="Home" width="42" id="p6W-hw-ONL"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="activityMinutesTextField" destination="gM0-FO-61H" id="db1-Q0-Ae9"/>
+                        <outlet property="activityStepsTextField" destination="8zB-PR-fWY" id="ONp-b1-qYr"/>
+                        <outlet property="calorieMealsTextField" destination="rnY-Gw-wYy" id="7kQ-tV-mZg"/>
+                        <outlet property="calorieSnacksTextField" destination="hhw-nD-WYJ" id="ABF-To-5N6"/>
+                        <outlet property="simulateDayButton" destination="bym-9G-oxa" id="zBg-8X-oO0"/>
+                        <outlet property="simulateTodayOutput" destination="mgU-SI-ibo" id="2fD-Fw-zUP"/>
+                        <outlet property="stepsRemainingOutput" destination="eGm-EV-XgF" id="eCd-sW-Jc7"/>
+                        <outlet property="todaySummaryOutput" destination="Dx8-QJ-H1l" id="VyU-tJ-bIk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDN-61-Ng3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,9 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Home Screen Outlets
     @IBOutlet weak var caloriesStackView: UIStackView!
     @IBOutlet weak var stepsStackView: UIStackView!
     @IBOutlet weak var mealPlannerButton: UIButton!
+    //Meal Planner Scene Outlets
+    
+    
     
     
     override func viewDidLoad() {
